@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="./style.css"></script>
-    <title>Todo</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script src="./main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div id="root">
+        <h1>todos</h1>
+        <article class="custom-todo">
+            <div class="dropDown-input">
+                <label for="down-arrow"><i class="arrow down down-arrow"></i></label>
+                <input type="checkbox" name="" id="down-arrow" class="down-arrow-input">
+                <input type="text" class="input-form"  placeholder="Whats needs to be done?">
+            </div>
+            <!-- <p>Down arrow: <i class="arrow down"></i></p>
+            <input type="text"  placeholder="whats needs to be done"> -->
+            <ul>
+                <!-- <li>
+                    <input type="checkbox" name="" id="">
+                    <p>Learn Dom</p>
+                    <span>x</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <p>Learn Dom</p>
+                    <span>x</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <p>Learn Dom</p>
+                    <span>x</span>
+                </li> -->
+            </ul>
+            <footer>
+                <span class="itemLeft">0 items left</span>
+                <div class="footer-btn">
+                    <button class="btn all">All</button>
+                    <button class="btn completed">Completed</button>
+                    <button class="btn active">Active</button>
+                </div>
+                
+                <button class="clear">Clear Completed</button>
+        
+            </footer>            
+        </article>
+
+    </div>
+
+        
+    
+<script src="./main.js"></script>
+
+</body>
 </html>
